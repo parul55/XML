@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<or:orders xmlns:or="http://www.zensar.com/orderxsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.zensar.com/orderxsd orderxsd.xsd ">
+  <or:order>
+    <or:orderID>OI-1234</or:orderID>
+    <or:custID>C-987654</or:custID>
+    <or:custName>D</or:custName>
+    <or:plan plan=""/>
+    <or:service service=""/>
+    <or:billingCycle>Monthly</or:billingCycle>
+    <or:billingAddress/>
+    <or:serviceAddress serviceAddress=""/>
+  </or:order>
+</or:orders>

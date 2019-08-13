@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.zensar.com/orderxsd" xmlns:or="http://www.zensar.com/orderxsd" elementFormDefault="qualified">
+	<element name="order">
+		<complexType>
+			<sequence>
+				<element name="order" maxOccurs="unbounded" >
+					<complexType>
+						<se
+					</complexType>
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+
+</schema>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.zensar.com/orderxsd" xmlns:or="http://www.zensar.com/orderxsd" elementFormDefault="qualified">
+	<element name="orders">
+		<complexType>
+			<sequence>
+				<element name="order" maxOccurs="unbounded" >
+					<complexType>
+						<sequence>
+							<element name="orderID" >
+								<simpleType>
+									<restriction base="string">
+										<pattern value="OI-[0-9]{4}"/>
+									</restriction>
+								</simpleType>
+							</element>
+							<element name="custID">
+								<simpleType>
+									<restriction base="string">
+										<pattern value="C-[0-9]{6}"/>
+									</restriction>
+								</simpleType>
+							</element>
+							<element name="custName">
+								<simpleType>
+									<restriction base="string">
+										<pattern value="[a-z][A-Z]|[A-Z][a-z]+"/>
+										<whiteSpace value="preserve"></whiteSpace>
+										<minLength value="10"></minLength>
+									</restriction>
+								</simpleType>
+							</element>
+							<element name="plan" >
+								<complexType>
+									<attribute name="plan" type="string" use="required"></attribute>
+								</complexType>
+							</element>
+							<element name="service">
+								<complexType>
+									<attribute name="service" type="string" use="required"></attribute>
+								</complexType>
+							</element> 
+							<element name="billingCycle">
+								<simpleType>
+									<restriction base="string">
+										<enumeration value="Monthly"></enumeration>
+										<enumeration value="Quarterly"></enumeration>
+										<enumeration value="Half-Yearly"></enumeration>
+										<enumeration value="Yearly"></enumeration>
+									</restriction>
+								</simpleType>
+							</element>
+							<element name="billingAddress">
+								<complexType>
+									<attribute name="billingAddress" type="string" use="optional"></attribute>
+								</complexType>
+							</element>
+							<element name="serviceAddress">
+								<complexType>
+									<attribute name="serviceAddress" type="string" use="required"></attribute>
+								</complexType>
+							</element>
+						</sequence>
+					</complexType>
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+
+</schema>

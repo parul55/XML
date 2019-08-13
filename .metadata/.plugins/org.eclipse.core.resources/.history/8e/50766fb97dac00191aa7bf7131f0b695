@@ -1,0 +1,12 @@
+package com.zensar.xml.sax.parsar;
+
+import javax.xml.parsers.SAXParserFactory;
+
+public class moviexmlparser {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			SAXParserFactory 
+	}
+
+}
